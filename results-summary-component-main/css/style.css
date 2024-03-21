@@ -7,6 +7,7 @@
 body {
     display: grid;
     font-family: 'HankenGrotesk', sans-serif;
+    font-weight: 500;
     grid-template-rows: 41vh 50vh 3vh;
     grid-template-areas: "header"
                          "main"
@@ -26,7 +27,7 @@ header {
 }
 #result {
     font-size: .95rem;
-    font-weight: 600;
+    font-weight: 700;
     padding: 1.5rem;
 }
 #total-score {
@@ -44,7 +45,7 @@ header {
 #overall-score {
     flex-grow: 1;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--color-white);
 }
 
@@ -58,6 +59,7 @@ header {
 #result-category {
     color: var(--color-white);
     font-size: 1.25rem;
+    font-weight: 500;
     padding-top: 1rem;
 }
 
@@ -85,7 +87,7 @@ table {
 
 #table-title {
     align-items: center;
-    font-weight: 600;
+    font-weight: 700;
     justify-content: center;
     padding: .5rem 2rem;
     text-align: left;
@@ -175,3 +177,26 @@ nav {
     align-self: center;
     grid-area: attribution;
 }
+/* 
+@media screen and (min-width: 500px) {
+    body {
+        border-radius: 25px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 95vh 5vh;
+        grid-template-areas: "header main"
+                             "attribution attribution";
+        gap: 1vh;
+    }
+
+    header {
+        border-radius: 25px;
+    }
+    tbody {
+        width:90%
+    }
+
+    nav {
+        width: 75%;
+    }
+} */
